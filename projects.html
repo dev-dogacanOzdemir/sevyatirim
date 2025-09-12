@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerimiz - Sev Yatırım</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="social-icons">
+                <a href="#" class="social-link" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="2.png" alt="Sev Yatırım Logo" class="logo-img">
+                </a>
+            </div>
+            
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modern Slide Menu -->
+        <div class="slide-menu">
+            <div class="slide-menu-content">
+                <div class="menu-header">
+                    <div class="menu-logo">
+                        <a href="index.html">
+                            <img src="2.png" alt="Sev Yatırım Logo" class="menu-logo-img">
+                        </a>
+                    </div>
+                    <button class="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <nav class="menu-nav">
+                    <ul class="menu-items">
+                        <li><a href="index.html" class="menu-link">Ana Sayfa</a></li>
+                        <li><a href="index.html#services" class="menu-link">Hizmetlerimiz</a></li>
+                        <li><a href="projects.html" class="menu-link">Projelerimiz</a></li>
+                        <li><a href="about.html" class="menu-link">Hakkımızda</a></li>
+                        <li><a href="contact.html" class="menu-link">İletişim</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-footer">
+                    <div class="menu-contact">
+                        <p><i class="fas fa-phone"></i> 0 (532) 372 67 22</p>
+                        <p><i class="fas fa-envelope"></i> info@sevyatirim.com</p>
+                    </div>
+                    <div class="menu-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Overlay -->
+        <div class="menu-overlay"></div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1>Projelerimiz</h1>
+                <p>Gerçekleştirdiğimiz başarılı projelerimizle inşaat sektöründeki deneyimimizi keşfedin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-main">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/1.jpeg" alt="Sev Apartmanı" onclick="openImageModal(this.src)">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SEV Apartmanı</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Çankaya / Ankara</p>
+                        <p class="project-description">18 daireli lüks konut projemiz Sev Apartmanı, Ankara'nın merkezi konumunda yer almaktadır. Modern mimari anlayışı ve özel tasarım detaylarıyla hayata geçirilen projemizde konforlu yaşam alanları oluşturduk.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-home"></i> 18 Daire</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Merkezi Konum</span>
+                            <span><i class="fas fa-car"></i> Kapalı-Açık Otopark</span>
+                            <span><i class="fas fa-thermometer-half"></i> Yerden Isıtma</span>
+                            <span><i class="fas fa-building"></i> Ferah Balkon</span>
+                            <span><i class="fas fa-palette"></i> İç Mimar Tasarım</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="sev-apartmani.html" class="btn btn-primary">
+                                <i class="fas fa-arrow-right"></i> Detayları Gör
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gelecekte eklenecek projeler için placeholder -->
+                <!-- 
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="" alt="">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-status ongoing">Devam Ediyor</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Proje Adı</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Konum</p>
+                        <p class="project-description">Proje açıklaması...</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-building"></i> Özellik 1</span>
+                            <span><i class="fas fa-car"></i> Özellik 2</span>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+            <button class="image-modal-nav image-modal-prev" onclick="changeImage(-1)">&#10094;</button>
+            <img id="modalImage" src="" alt="">
+            <button class="image-modal-nav image-modal-next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SEV YATIRIM</h3>
+                    <p>Modern inşaat çözümleri ve kaliteli yaşam alanları.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="index.html#services">Hizmetlerimiz</a></li>
+                        <li><a href="projects.html">Projeler</a></li>
+                        <li><a href="index.html#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-phone"></i> 0 (532) 372 67 22</p>
+                    <p><i class="fas fa-envelope"></i> info@sevyatirim.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sev Yatırım. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
